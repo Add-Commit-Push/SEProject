@@ -1,2 +1,2 @@
 # SEProject
-Softwere Eng. Project
+Software Eng. Project
