@@ -4,7 +4,7 @@ This is the Desktop version of the platform
 ### Getting up and running
 
 And then install dependencies with npm:
-**Note**: I'll try push the dependencies for now, so you don't need to do this step
+**Note**:Make sure each step runs without any errors before running the next.
 
 ```bash
 $ npm install
