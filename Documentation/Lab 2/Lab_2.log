@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.7)  28 AUG 2017 17:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.7)  28 AUG 2017 17:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1124,7 +1124,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 184--185
 ! Misplaced alignment tab character &.
 <argument> Hardware &
                       Software architecture
-l.222 ...ection*{Hardware & Software architecture}
+l.227 ...ection*{Hardware & Software architecture}
                                                   
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1139,105 +1139,106 @@ File: ./uploads_new/Lab_2.docx_DIR/media/image7.png Graphic file (type png)
 
 <use ./uploads_new/Lab_2.docx_DIR/media/image7.png>
 Package pdftex.def Info: ./uploads_new/Lab_2.docx_DIR/media/image7.png used on 
-input line 231.
+input line 236.
 (pdftex.def)             Requested size: 469.78468pt x 185.74315pt.
 
-Overfull \hbox (31.27055pt too wide) in paragraph at lines 231--232
+Overfull \hbox (31.27055pt too wide) in paragraph at lines 236--237
  [] 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+txr on input line 245.
+LaTeX Font Info:    Try loading font information for OMS+txr on input line 250.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omstxr.fd
 File: omstxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <12> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 245.
-LaTeX Font Info:    Try loading font information for OT1+txr on input line 254.
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 250.
+ [3 <./uploads_new/Lab_2.docx_DIR/media/image7.png>]
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 259.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 254.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 259.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+txsya on input line 254.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 259.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 254.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 259.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txmia on input line 254.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 259.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 254.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 259.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+wasy on input line 254.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 259.
 
 (/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
-) [3 <./uploads_new/Lab_2.docx_DIR/media/image7.png>]
+)
 
-! LaTeX Error: \begin{itemize} on input line 244 ended by \end{document}.
+! LaTeX Error: \begin{itemize} on input line 249 ended by \end{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.265 \end{document}
+l.270 \end{document}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 265.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 270.
 [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 265.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 270.
  (./Lab_2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 265.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 265.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 270.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 270.
 Package rerunfilecheck Info: File `Lab_2.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 265.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 270.
  )
 (\end occurred inside a group at level 1)
 
-### semi simple group (level 1) entered at line 244 (\begingroup)
+### semi simple group (level 1) entered at line 249 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 9556 strings out of 494910
- 134647 string characters out of 6179836
+ 9557 strings out of 494910
+ 134657 string characters out of 6179836
  224535 words of memory out of 5000000
  12595 multiletter control sequences out of 15000+600000
  46779 words of font info for 79 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 30i,11n,43p,386b,546s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 30i,11n,43p,656b,458s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</us
 r/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr
 8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Lab_2.pdf (4 pages, 121955 bytes).
+Output written on Lab_2.pdf (4 pages, 123447 bytes).
 PDF statistics:
- 78 PDF objects out of 1000 (max. 8388607)
- 60 compressed objects within 1 object stream
- 23 named destinations out of 1000 (max. 500000)
+ 79 PDF objects out of 1000 (max. 8388607)
+ 61 compressed objects within 1 object stream
+ 24 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
