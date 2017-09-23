@@ -1,71 +1,41 @@
-#Desktop
-This is the Desktop version of the platform
+# Desktop Application
+***
+This is the resturant management dash.
 
-### Getting up and running
+### Version
+0.1.0
 
-And then install dependencies with npm:
-**Note**:Make sure each step runs without any errors before running the next.
+## Usage
 
-```bash
+### Installation
+
+```sh
 $ npm install
 ```
 
-## Run
+### Serve
+To run
 
-Start the app in `dev` mode:
-
-```bash
-$ npm run dev
-```
-
-Run these two commands __simultaneously__ in different console tabs (One after the other):
-
-```bash
-$ npm run hot-updates-server
-$ npm run start-hot-renderer
-```
-
-## DevTools for debugging
-
-#### Toggling Chrome DevTools
-
-- OS X: <kbd>Cmd</kbd> <kbd>Alt</kbd> <kbd>I</kbd> or <kbd>F12</kbd>
-- Linux: <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>I</kbd> or <kbd>F12</kbd>
-- Windows: <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>I</kbd> or <kbd>F12</kbd>
-
-
-## Packaging
-
-To package apps for the local platform:
-
-```bash
-$ npm run package
-```
-
-To package apps for all platforms:
-
-```bash
-$ npm run package-all
-```
-
-To package apps with options:
-
-```bash
-$ npm run package -- --[option]
-```
-
-## Further commands
-
-To run the application without packaging:
-
-```bash
-$ npm run build
+```sh
 $ npm start
 ```
 
-To run End-to-End Test:
+### Package & Build
 
-```bash
-$ npm run build
-$ npm run test-e2e
+For Windows
+
+```sh
+$ npm run package-win
+```
+
+For Mac
+
+```sh
+$ npm run package-mac
+```
+
+For Linux
+
+```sh
+$ npm run package-linux
 ```
