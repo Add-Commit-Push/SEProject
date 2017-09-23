@@ -1,4 +1,5 @@
-#Website
+# Website
+***
 This is the web version of the platform
 
 ### Getting up and running
