@@ -1,2 +1,18 @@
-/Project/Back-end/node-modules
-/Project/Desktop/node-modules
+# npm files
+/Project/Back-end/api/node_modules
+/Project/Desktop/node_modules
+
+/Project/Back-end/api/package-lock.json
+/Project/Desktop/package-lock.json
+
+/Project/Back-end/api/*.log
+/Project/Desktop/*.log
+
+*.log
+
+# Editor files
+/Project/Back-end/api/.idea
+/Project/Desktop/.idea
+/Project/Web/.idea
+
+.idea
