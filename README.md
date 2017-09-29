@@ -2,6 +2,6 @@
 
 --------------------------------------------------------------------------------
 
-![Alt text](images/logo.svg?raw=true "Title")
+![Alt text](images/logo.png?raw=true "Title")
 
 Software Eng. Project.
