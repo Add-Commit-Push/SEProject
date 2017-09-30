@@ -13,7 +13,10 @@ var OrderSchema = new mongoose.Schema({
       city: String,
       province: String
   },
-  article: { type: mongoose.Schema.Types.ObjectId, ref: 'Article' }
+  delivarystatus: {
+    status: {type: String, required: true},
+    reason: {type: String, default:"CLEAN"}
+  } // to be delivered | delivered | rejected |
 }, {timestamps: true});
 
 // Requires population of author
