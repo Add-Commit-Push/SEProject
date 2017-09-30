@@ -39,9 +39,9 @@ if(isProduction){
 
 require('./models/Employee');
 require('./models/User');
-require('./modal/Customer');
-require('./modal/MenuItem');
-require('./models/Article');
+require('./models/Customer');
+require('./models/MenuItem');
+require('./models/InventoryItem');
 require('./models/Order');
 require('./config/passport');
 

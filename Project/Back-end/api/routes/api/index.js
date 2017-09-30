@@ -4,7 +4,7 @@ router.use('/', require('./users'));
 router.use('/customer', require('./customer'));
 router.use('/employee', require('./employee'));
 router.use('/profiles', require('./profiles'));
-router.use('/articles', require('./articles'));
+router.use('/inventoryitem', require('./inventoryitem'));
 router.use('/menuitem', require('./menuitem'));
 
 router.use(function(err, req, res, next){

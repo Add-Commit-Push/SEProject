@@ -1,25 +1,29 @@
-var path = require('path');
-var webpack = require('webpack');
+const ExtractTextlugin = require('extract-text-webpack-plugin');
 
-module.exports = {
-    entry: './index.js',
-    output: {
-        path: path.resolve(__dirname, 'build'),
-        filename: "main.bundle.js"
-    },
-    module: {
-        loaders: [
-            {
-                test: /\/js$/,
-                loader: 'babel-loader',
-                query: {
-                    presets: ['es2015']
-                }
-            }
-        ]
-    },
-    stats: {
-        colors: true
-    },
-    devtool: 'source-map'
+module.exports={
+  entry:'./src/renderer.js',
+  output:{
+    filename:'./build/bundle.js'
+  },
+  module: {
+    loaders: [
+      {
+        test: /\.js$/,
+        exclude: /(node_modules|bower_components)/,
+        loader: 'babel',
+        query:{
+          presets:['react','es2015']
+        }
+      },
+      {
+        test: /\.css$/,
+        use: ExtractTextlugin.extract({
+          fallback:"style-loader",
+          use:"css-loader"})
+      }
+    ]
+  },
+  plugins: [
+    new ExtractTextlugin("[name].css")
+  ]
 }

@@ -1,42 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <title>Manager 0.1.0</title>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+  </head>
+  <body>
 
-  <link rel="stylesheet" href="assets/css/Home.css">
-  <link rel="stylesheet" href="assets/css/Login.css">
-  <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <div id="app"></div>
 
-</head>
-<body>
-  <div id="app"></div>
-</body>
-<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-<script>
-  console.log('I am updated');
-
-  // Listen for messages
-  const { ipcRenderer } = require('electron');
-  ipcRenderer.on('message', function (event, text) {
-    console.log('Message from updater:', text);
-  });
-
-  if (process.env.NODE_ENV === 'test') {
-    require('babel-register')({
-      presets: [
-        ['env', {
-          targets: {
-            electron: 1.6
-          },
-        }],
-        'react',
-      ],
-    });
-    require('./src/index.js');
-  } else {
-    require('./src/app.min.js');
-  }
-</script>
+  <script>
+    // You can also require other files to run in this process
+    require('./build/bundle.js')
+  </script>
+  </body>
 </html>
