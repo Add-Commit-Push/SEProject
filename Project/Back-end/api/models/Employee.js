@@ -5,27 +5,23 @@ var jwt = require('jsonwebtoken');
 var secret = require('../config').secret;
 
 
-var AddressSchema = new mongoose.Schema({
-    first: String,
-    second: String,
-    third: String,
-    areacode: Number,
-    city: String,
-    province: String
-});
-mongoose.model('Address', AddressSchema);
-
-
 
 var EmployeeSchema = new mongoose.Schema({
-    employeeeame: {type: String, required: [true, "Needs a name"], match: [/^[a-zA-Z0-9]+$/, 'is invalid'], index: true},
+    employeename: {type: String, required: [true, "Needs a name"], match: [/^[a-zA-Z0-9]+$/, 'is invalid']},
     employeeemail: {type: String, lowercase: true, unique: [true, "Email already exists"], required: [true, "Needs an email"], match: [/\S+@\S+\.\S+/, 'is invalid'], index: true},
     employeephone: {type: String, required: [true, "Needs a phone number"]},
     designation: String,
     status: {type: String, required: [true, "Status of employee required"]},//dismissed, working, paternity/maternity...
     worktype: String,
     employeeid: String,
-    employeeadress: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Address' }],
+    employeeadress: {
+        first: String,
+        second: String,
+        third: String,
+        areacode: Number,
+        city: String,
+        province: String
+    },
     hash: String,
     salt: String
 }, {timestamps: true});

@@ -4,21 +4,21 @@ import {HashRouter, Route, Switch} from 'react-router-dom';
 
 // pages
 import Home from './pages/Home';
+import Login from './pages/Login';
 import MyStuff from './pages/my';
 import Settings from './pages/settings';
 import Series from './pages/series';
-import Episode from './pages/episode';
 
 // render on page
 ReactDOM.render(
   <HashRouter>
     <div className="container is-fluid">
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/settings" component={Settings} />
-        <Route exact path="/my" component={MyStuff} />
-        <Route path="/series/:id" component={Series} />
-        <Route path="/episode/:id" component={Episode} />
+        <Route exact path="/" component={Login} />
+        <Route exact path="/home" component={Home} />
+        <Route exact path="/my" component={Login} />
+        <Route path="/series/:id" component={Home} />
+        <Route path="/episode/:id" component={Login} />
         <Route component={Home} />
       </Switch>
     </div>

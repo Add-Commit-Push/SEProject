@@ -39,8 +39,10 @@ if(isProduction){
 
 require('./models/Employee');
 require('./models/User');
+require('./modal/Customer');
+require('./modal/MenuItem');
 require('./models/Article');
-require('./models/Comment');
+require('./models/Order');
 require('./config/passport');
 
 app.use(require('./routes'));
