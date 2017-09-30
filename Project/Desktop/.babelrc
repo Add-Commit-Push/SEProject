@@ -1,7 +1,10 @@
 {
-	"presets": [
-    ["es2015", { "modules": false }],
-		"react",
-    "stage-1"
-	]
+  "presets": [
+    ["env", {
+      "targets": {
+        "electron": 1.6
+      },
+      "modules": false
+    }], "react"
+  ]
 }

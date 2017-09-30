@@ -1,80 +1,65 @@
 {
-  "name": "desktop-app",
-  "version": "1.0.0",
-  "description": "Resturant management system.",
-  "main": "./app/build/app.js",
-  "scripts": {
-    "dev": "concurrently \"cross-env NODE_ENV=development webpack-dev-server --config webpack/dev.config.js\" \"cross-env NODE_ENV=development electron ./app/src/main/app.js\"",
-    "prod": "cross-env NODE_ENV=production webpack --progress --color --config webpack/prod.config.js",
-    "start": "npm run prod && electron app/build/app.js",
-    "lint": "eslint --ext .jsx,.js app/src/main --fix",
-    "pack": "electron-builder --dir",
-    "dist": "npm run prod && electron-builder",
-    "postinstall": "electron-builder install-app-deps"
-  },
-  "author": "Ishmael Sibisi",
+  "name": "bpjs-electron",
+  "version": "0.4.0",
+  "description": "BPJS Electron app",
+  "main": "index.js",
+  "repository": "git@github.com:yamalight/bpjs-electron.git",
+  "author": "Tim Ermilov <yamalight@gmail.com>",
   "license": "MIT",
-  "build": {
-    "productName": "manager",
-    "win": {
-      "target": "NSIS"
-    },
-    "linux": {
-      "target": [
-        "deb",
-        "AppImage"
-      ]
-    },
-    "mac": {
-      "category": "public.app-category.developer-tools"
-    },
-    "directories": {
-      "output": "release"
-    }
+  "scripts": {
+    "start": "NODE_ENV=test electron .",
+    "production": "electron .",
+    "lint": "eslint **/*.js",
+    "inspect-main": "electron-inspector",
+    "build": "rollup -c",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder --x64 --mac",
+    "gh-publish": "electron-builder --x64 --mac -p always",
+    "test": "NODE_ENV=test mocha"
   },
-  "keywords": [
-    "electron",
-    "react",
-    "react router v4",
-    "redux",
-    "webpack 3"
-  ],
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-minify-webpack-plugin": "^0.2.0",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-1": "^6.24.1",
-    "concurrently": "^3.5.0",
-    "copy-webpack-plugin": "^4.0.1",
-    "cross-env": "^5.0.5",
-    "css-loader": "^0.28.7",
-    "electron": "^1.7.6",
-    "electron-builder": "^19.27.7",
-    "electron-devtools-installer": "^2.2.0",
-    "eslint": "^4.6.1",
-    "eslint-config-airbnb": "^15.1.0",
-    "eslint-config-google": "^0.9.1",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-jsx-a11y": "^6.0.2",
-    "eslint-plugin-react": "^7.3.0",
-    "extract-text-webpack-plugin": "^3.0.0",
-    "file-loader": "^0.11.2",
-    "node-sass": "^4.5.3",
-    "react-hot-loader": "^3.0.0-beta.6",
-    "sass-loader": "^6.0.6",
-    "style-loader": "^0.18.2",
-    "webpack": "^3.5.6",
-    "webpack-dev-server": "^2.7.1",
-    "webpack-node-externals": "^1.6.0"
+    "babel-core": "^6.24.0",
+    "babel-preset-env": "^1.3.2",
+    "babel-preset-react": "^6.23.0",
+    "babel-register": "^6.24.0",
+    "electron-builder": "^19.26.3",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-config-prettier": "^1.5.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-prettier": "^2.0.1",
+    "eslint-plugin-react": "^6.10.3",
+    "mocha": "^3.4.2",
+    "prettier": "^0.22.0",
+    "rollup": "^0.45.2",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-uglify": "^2.0.1",
+    "spectron": "^3.7.2",
+    "uglify-es": "^3.0.27"
   },
   "dependencies": {
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "react-redux": "^5.0.6",
-    "react-router": "4.2.0",
-    "react-router-dom": "4.2.2",
-    "redux": "^3.7.2"
+    "axios": "^0.16.1",
+    "big-integer": "^1.6.22",
+    "bulma": "^0.4.0",
+    "cheerio": "^0.22.0",
+    "electron": "^1.6.2",
+    "electron-log": "^2.2.7",
+    "electron-updater": "^2.8.7",
+    "font-awesome": "^4.7.0",
+    "lodash": "^4.17.4",
+    "playlist-parser": "^0.0.12",
+    "pouchdb-browser": "^6.1.2",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-router-dom": "^4.0.0",
+    "request": "^2.81.0",
+    "request-promise-native": "^1.0.3",
+    "rxjs": "^5.3.0",
+    "video.js": "^5.19.2",
+    "videojs-ass": "^0.6.3",
+    "videojs-contrib-hls": "^5.4.1",
+    "xml2js": "^0.4.17",
+    "zlib": "^1.0.5"
   }
 }
