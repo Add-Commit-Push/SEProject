@@ -1,3 +1,5 @@
+$(document).load(function () {
+
 type = ['','info','success','warning','danger'];
 
 
@@ -313,3 +315,6 @@ demo = {
     }
 
 }
+
+
+});

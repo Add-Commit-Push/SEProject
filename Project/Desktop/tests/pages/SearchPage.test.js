@@ -3,7 +3,7 @@
 import React      from 'react';
 import TestUtils  from 'react-addons-test-utils';
 
-import SearchPage from '../../app/js/pages/SearchPage';
+import SearchPage from '../../app/js/pages/HomePageChildren/Notifications';
 
 describe('Page: Search', function() {
 

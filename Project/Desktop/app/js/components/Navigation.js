@@ -28,13 +28,13 @@ class Navigation extends React.Component {
     };
   }
 
-  renderChildren() {
-      return React.cloneElement(this.props.children, {
-          params: this.props.params,
-          query: this.props.query,
-          currentUser: this.state.currentUser
-      });
-  }
+    renderChildren() {
+        return React.cloneElement(this.props.children, {
+            params: this.props.params,
+            query: this.props.query,
+            currentUser: this.state.currentUser
+        });
+    }
 
   render() {
     return (
@@ -48,8 +48,8 @@ class Navigation extends React.Component {
                     <ul className="nav">
                         <li>
                             <Link activeClassName="active" to="/home/dash">
-                                <i className="ti-panel"></i>
-                                <p>Dashboard</p>
+                                <i className="ti-home"></i>
+                                <p>Home</p>
                             </Link>
                         </li>
                         <li>
@@ -59,34 +59,40 @@ class Navigation extends React.Component {
                             </Link>
                         </li>
                         <li>
-                            <Link to="/home/inventory">
+                            <Link activeClassName="active"  to="/home/inventory">
                                 <i className="ti-view-list-alt"></i>
                                 <p>Inventory</p>
                             </Link>
                         </li>
                         <li>
-                            <a href="typography.html">
-                                <i className="ti-text"></i>
-                                <p>Typography</p>
+                            <a href="icons.html">
+                                <i className="ti-server"></i>
+                                <p>Manage Customers</p>
                             </a>
                         </li>
                         <li>
                             <a href="icons.html">
                                 <i className="ti-pencil-alt2"></i>
-                                <p>Icons</p>
+                                <p>Manage Employees</p>
                             </a>
                         </li>
                         <li>
                             <a href="maps.html">
                                 <i className="ti-map"></i>
-                                <p>Maps</p>
+                                <p>Menus</p>
                             </a>
                         </li>
                         <li>
                             <a href="notifications.html">
+                                <i className="ti-wallet"></i>
+                                <p>Accounting</p>
+                            </a>
+                        </li>
+                        <li>
+                            <Link activeClassName="active"  active to="/home/notice">
                                 <i className="ti-bell"></i>
                                 <p>Notifications</p>
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </div>
@@ -108,15 +114,15 @@ class Navigation extends React.Component {
                             <ul className="nav navbar-nav navbar-right">
                                 <li>
                                     <a href="#" className="dropdown-toggle" data-toggle="dropdown">
-                                        <i className="ti-panel"></i>
-                                        <p>Stats</p>
+                                        <i className="ti-panel"> </i>
+                                        <p> Stats</p>
                                     </a>
                                 </li>
                                 <li className="dropdown">
                                     <a href="#" className="dropdown-toggle" data-toggle="dropdown">
                                         <i className="ti-bell"></i>
-                                        <p className="notification">5</p>
-                                        <p>Notifications</p>
+                                        <p className="notification">5 </p>
+                                        <p> Notifications</p>
                                         <b className="caret"></b>
                                     </a>
                                     <ul className="dropdown-menu">

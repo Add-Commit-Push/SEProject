@@ -26,14 +26,15 @@ class Profile extends React.Component {
                             <div className="content">
                                 <div className="author">
                                     <img className="avatar border-white" src="http://localhost:3000/images/faces/face-2.jpg" alt="..."/>
-                                    <h4 className="title">Chet Faker<br />
-                                        <a href="#"><small>@chetfaker</small></a>
+                                    <h4 className="title">Chef Ferreira<br />
+                                        <a href="#"><small>@Chef_Marthinus_Ferreira</small></a>
                                     </h4>
                                 </div>
                                 <p className="description text-center">
-                                    "I like the way you work it <br/>
-                                    No diggity <br/>
-                                    I wanna bag it up"
+                                    "Since 2009 we have been<br/>
+                                    providing patrons with a dinning <br/>
+                                    Atmosphere & menu that is <br/>
+                                    constantly evolving"
                                 </p>
                             </div>
                             <hr/>
@@ -46,14 +47,14 @@ class Profile extends React.Component {
                                             <h5>2GB<br /><small>Used</small></h5>
                                         </div>
                                         <div className="col-md-3">
-                                            <h5>24,6$<br /><small>Spent</small></h5>
+                                            <h5>198.1GB<br /><small>Remaining</small></h5>
                                         </div>
                                     </div>
                                 </div>
                         </div>
                         <div className="card">
                             <div className="header">
-                                <h4 className="title">Team Members</h4>
+                                <h4 className="title">Executive Team</h4>
                             </div>
                             <div className="content">
                                 <ul className="list-unstyled team-members">
@@ -65,7 +66,7 @@ class Profile extends React.Component {
                                                 </div>
                                             </div>
                                             <div className="col-xs-6">
-                                                DJ Khaled
+                                                Chef Robbins
                                                 <br />
                                                 <span className="text-muted"><small>Offline</small></span>
                                             </div>
@@ -83,7 +84,7 @@ class Profile extends React.Component {
                                                 </div>
                                             </div>
                                             <div className="col-xs-6">
-                                                Creative Tim
+                                                Chef Stacy
                                                 <br />
                                                 <span className="text-success"><small>Available</small></span>
                                             </div>
@@ -101,7 +102,7 @@ class Profile extends React.Component {
                                                 </div>
                                             </div>
                                             <div className="col-xs-6">
-                                                Flume
+                                                Sue Chef Jonathen
                                                 <br />
                                                 <span className="text-danger"><small>Busy</small></span>
                                             </div>
@@ -126,13 +127,13 @@ class Profile extends React.Component {
                                         <div className="col-md-5">
                                             <div className="form-group">
                                                 <label>Company</label>
-                                                <input type="text" className="form-control border-input" disabled placeholder="Company" value="Creative Code Inc."/>
+                                                <input type="text" className="form-control border-input" disabled placeholder="Company" value="DW Eleven - 13."/>
                                             </div>
                                         </div>
                                         <div className="col-md-3">
                                             <div className="form-group">
                                                 <label>Username</label>
-                                                <input type="text" className="form-control border-input" placeholder="Username" value="michael23"/>
+                                                <input type="text" className="form-control border-input" placeholder="Username" value="Chef_Marthinus_Ferreira"/>
                                             </div>
                                         </div>
                                         <div className="col-md-4">
@@ -147,13 +148,13 @@ class Profile extends React.Component {
                                         <div className="col-md-6">
                                             <div className="form-group">
                                                 <label>First Name</label>
-                                                <input type="text" className="form-control border-input" placeholder="Company" value="Chet"/>
+                                                <input type="text" className="form-control border-input" placeholder="Company" value="Marthinus"/>
                                             </div>
                                         </div>
                                         <div className="col-md-6">
                                             <div className="form-group">
                                                 <label>Last Name</label>
-                                                <input type="text" className="form-control border-input" placeholder="Last Name" value="Faker"/>
+                                                <input type="text" className="form-control border-input" placeholder="Last Name" value="Ferreira"/>
                                             </div>
                                         </div>
                                     </div>
@@ -162,7 +163,7 @@ class Profile extends React.Component {
                                         <div className="col-md-12">
                                             <div className="form-group">
                                                 <label>Address</label>
-                                                <input type="text" className="form-control border-input" placeholder="Home Address" value="Melbourne, Australia"/>
+                                                <input type="text" className="form-control border-input" placeholder="Home Address" value="Dunkeld West Shopping Centre"/>
                                             </div>
                                         </div>
                                     </div>
@@ -171,19 +172,19 @@ class Profile extends React.Component {
                                         <div className="col-md-4">
                                             <div className="form-group">
                                                 <label>City</label>
-                                                <input type="text" className="form-control border-input" placeholder="City" value="Melbourne"/>
+                                                <input type="text" className="form-control border-input" placeholder="City" value="Jan Smuts & Bompas Str"/>
                                             </div>
                                         </div>
                                         <div className="col-md-4">
                                             <div className="form-group">
                                                 <label>Country</label>
-                                                <input type="text" className="form-control border-input" placeholder="Country" value="Australia"/>
+                                                <input type="text" className="form-control border-input" placeholder="Country" value="Johannesburg"/>
                                             </div>
                                         </div>
                                         <div className="col-md-4">
                                             <div className="form-group">
                                                 <label>Postal Code</label>
-                                                <input type="number" className="form-control border-input" placeholder="ZIP Code"/>
+                                                <input type="number" className="form-control border-input" placeholder="ZIP Code" value="2003"/>
                                             </div>
                                         </div>
                                     </div>
@@ -192,10 +193,9 @@ class Profile extends React.Component {
                                         <div className="col-md-12">
                                             <div className="form-group">
                                                 <label>About Me</label>
-                                                <textarea rows="5" className="form-control border-input" placeholder="Here can be your description" value="Mike">Oh so, your weak rhyme
-You doubt I'll bother, reading into it
-I'll probably won't, left to my own devices
-But that's the difference in our opinions.</textarea>
+                                                <textarea rows="5" className="form-control border-input" placeholder="Here can be your description">
+
+                                                </textarea>
                                             </div>
                                         </div>
                                     </div>

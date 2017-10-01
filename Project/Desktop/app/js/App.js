@@ -1,7 +1,8 @@
 'use strict';
 
 import React              from 'react';
-import Header             from './components/Navigation';
+import Navigation             from './components/Navigation';
+import LoginPage             from './pages/LoginPage';
 
 const propTypes = {
   params: React.PropTypes.object,
@@ -17,7 +18,9 @@ class App extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {};
+    this.state = {
+      loggedIn: false
+    };
   }
 
   componentWillMount() {
@@ -39,11 +42,7 @@ class App extends React.Component {
   }
 
   render() {
-        return (
-            <div>
-                {this.renderChildren()}
-            </div>
-        );
+        return (this.props.children);
       }
 
 }
