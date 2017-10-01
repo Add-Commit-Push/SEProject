@@ -145,7 +145,7 @@ class HomePage extends React.Component {
                     <div className="alert alert-warning alert-with-icon" data-notify="container">
                       <button type="button" aria-hidden="true" className="close">×</button>
                       <a><span data-notify="icon" className="ti-more"></span></a>
-                      <span data-notify="message">This is a notification with close button and icon and have many lines. You can see that the icon and the close button are always vertically aligned. This is a beautiful notification. So you don't have to worry about the style.</span>
+                      <span data-notify="message"><h4>Hello</h4>This is a notification with close button and icon and have many lines. You can see that the icon and the close button are always vertically aligned. This is a beautiful notification. So you don't have to worry about the style.</span>
                     </div>
 
                   </div>
