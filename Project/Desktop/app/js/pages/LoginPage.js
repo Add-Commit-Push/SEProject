@@ -9,6 +9,16 @@ const propTypes = {
     currentUser: React.PropTypes.object
 };
 
+let bord = {
+  borderTop: '0',
+  borderLeft: '0',
+  borderRight: '0',
+  borderBottom: '1px',
+  borderColor: '#5C5D58',
+  borderRadius: '0',
+  borderStyle: 'solid'
+};
+
 class LoginPage extends React.Component {
 
     constructor(props) {
@@ -59,13 +69,13 @@ class LoginPage extends React.Component {
                         <h1 className="display1">DW Eleven - 13</h1>
                         <form action="" method="" className="" role="form">
                             <div id="form-login-username" className="form-group">
-                                <input id="username" className="form-control" name="username" type="text" size="18" alt="login" required />
+                                <input style={bord} id="username" className="form-control" name="username" type="text" size="18" placeholder="login" required />
                                 <span className="form-highlight"></span>
                                 <span className="form-bar"></span>
                                 <label for="username" className="float-label">login</label>
                             </div>
                             <div id="form-login-password" className="form-group">
-                                <input id="passwd" className="form-control" name="password" type="password" size="18" alt="password" required/>
+                                <input style={bord} id="passwd" className="form-control" name="password" type="password" size="18" placeholder="password" required/>
                                     <span className="form-highlight"></span>
                                     <span className="form-bar"></span>
                                     <label for="password" className="float-label">password</label>

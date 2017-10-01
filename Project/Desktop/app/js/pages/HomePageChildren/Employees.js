@@ -3,6 +3,7 @@
 import React         from 'react';
 import {Link}        from 'react-router';
 import DocumentTitle from 'react-document-title';
+import axios from 'axios';
 
 const propTypes = {
     currentUser: React.PropTypes.object
@@ -12,6 +13,17 @@ class Employees extends React.Component {
 
     constructor(props) {
         super(props);
+
+        this.getemp = this.getemp.bind(this);
+    }
+
+    getemp(){
+        axios.get('/tests/emp').
+        then(function (res) {
+
+        }).catch(function (res) {
+
+        });
     }
 
     render() {

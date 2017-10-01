@@ -3,7 +3,6 @@
 import React from 'react';
 import {Router, Route, IndexRoute,Link} from 'react-router';
 import { Modal } from 'react-bootstrap';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import {RaisedButton} from 'material-ui/RadioButton';
 
 
@@ -89,9 +88,9 @@ class Navigation extends React.Component {
                             </a>
                         </li>
                         <li>
-                            <Link activeClassName="active"  active to="/home/notice">
-                                <i className="ti-bell"></i>
-                                <p>Notifications</p>
+                            <Link activeClassName="active"  active to="/home/archives">
+                                <i className="ti-briefcase"></i>
+                                <p>Archives</p>
                             </Link>
                         </li>
                     </ul>
