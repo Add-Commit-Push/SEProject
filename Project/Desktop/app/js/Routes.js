@@ -11,10 +11,13 @@ import Navigation from './components/Navigation';
 import LoginPage from './pages/LoginPage';
 import App from './App';
 
-import Profile from './pages/HomePageChildren/Profile'
-import HomePage from './pages/HomePage'
-import Inventory from './pages/HomePageChildren/Inventory'
-import Notifications from './pages/HomePageChildren/Notifications'
+import Profile from './pages/HomePageChildren/Profile';
+import HomePage from './pages/HomePage';
+import Inventory from './pages/HomePageChildren/Inventory';
+import Notifications from './pages/HomePageChildren/Notifications';
+import MenuItem from './pages/HomePageChildren/MenuItem';
+import Employees from './pages/HomePageChildren/Employees';
+import Customer from './pages/HomePageChildren/Customer';
 
 export default (
   <Router history={createHistory()}>
@@ -26,6 +29,9 @@ export default (
             <Route path="profile" component={Profile}/>
             <Route path="inventory" component={Inventory}/>
             <Route path="notice" component={Notifications}/>
+            <Route path="menu" component={MenuItem}/>
+            <Route path="employees" component={Employees}/>
+            <Route path="customer" component={Customer}/>
         </Route>
         <Route path="*" component={NotFoundPage}/>
     </Route>

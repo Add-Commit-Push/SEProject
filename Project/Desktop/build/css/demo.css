@@ -223,3 +223,15 @@
 		transform: scale3d(1, 1, 1);
 	}
 }
+
+
+
+
+.wrapper.uk-card.uk-card-hover{
+	max-height: 20px !important;
+}
+
+
+table{
+	background-color: white;
+}

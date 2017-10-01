@@ -65,22 +65,22 @@ class Navigation extends React.Component {
                             </Link>
                         </li>
                         <li>
-                            <a href="icons.html">
+                            <Link activeClassName="active" to="/home/customer">
                                 <i className="ti-server"></i>
                                 <p>Manage Customers</p>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="icons.html">
+                            <Link activeClassName="active" to="/home/employees">
                                 <i className="ti-pencil-alt2"></i>
                                 <p>Manage Employees</p>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="maps.html">
+                            <Link activeClass="active" to="/home/menu" href="maps.html">
                                 <i className="ti-map"></i>
                                 <p>Menus</p>
-                            </a>
+                            </Link>
                         </li>
                         <li>
                             <a href="notifications.html">
@@ -108,7 +108,7 @@ class Navigation extends React.Component {
                                 <span className="icon-bar bar2"></span>
                                 <span className="icon-bar bar3"></span>
                             </button>
-                            <a className="navbar-brand" href="#">Page</a>
+                            <a className="navbar-brand" href="#">{/*Page*/}</a>
                         </div>
                         <div className="collapse navbar-collapse">
                             <ul className="nav navbar-nav navbar-right">
