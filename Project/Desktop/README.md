@@ -13,29 +13,15 @@ This is the resturant management dash.
 $ npm install
 ```
 
-### Serve
+### Serve on the dev server (requires gulp installed globally)
 To run
 
 ```sh
-$ npm start
+$ gulp dev
 ```
 
 ### Package & Build
 
-For Windows
-
 ```sh
-$ npm run package-win
-```
-
-For Mac
-
-```sh
-$ npm run package-mac
-```
-
-For Linux
-
-```sh
-$ npm run package-linux
+$ gulp prod
 ```
